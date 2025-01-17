@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="cal-container">
+      <div class="cal-wrapper">
+        <div class="cal-items">
+          <div class="cal-item inp-text"><input type="text" /><p class="cal-visual"></p></div>
+          <div class="first-line">
+            <div class="cal-item clear">
+              <button class="btn btn-clear">C</button>
+            </div>
+            <div class="cal-item divide">
+              <button data-btn-pressed="false" data-btn-num="/" class="btn btn-divide">÷</button>
+            </div>
+            <div class="cal-item back">
+              <button data-btn-bs="backspace" class="btn btn-backspace">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-backspace-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="second-line">
+            <div class="cal-item seven">
+              <button data-btn-num="7" class="btn btn-7">7</button>
+            </div>
+            <div class="cal-item eight">
+              <button data-btn-num="8" class="btn btn-8">8</button>
+            </div>
+            <div class="cal-item nine">
+              <button data-btn-num="9" class="btn btn-9">9</button>
+            </div>
+            <div class="cal-item multiply">
+              <button data-btn-pressed="false" data-btn-num="*" class="btn btn-multiply">
+                x
+              </button>
+            </div>
+          </div>
+          <div class="third-line">
+            <div class="cal-item four">
+              <button data-btn-num="4" class="btn btn-4">4</button>
+            </div>
+            <div class="cal-item five">
+              <button data-btn-num="5" class="btn btn-5">5</button>
+            </div>
+            <div class="cal-item six">
+              <button data-btn-num="6" class="btn btn-6">6</button>
+            </div>
+            <div class="cal-item min">
+              <button data-btn-pressed="false" data-btn-num="-" class="btn btn-min">-</button>
+            </div>
+          </div>
+          <div class="fourth-line">
+            <div class="cal-item one">
+              <button data-btn-num="1" class="btn btn-1">1</button>
+            </div>
+            <div class="cal-item two">
+              <button data-btn-num="2" class="btn btn-2">2</button>
+            </div>
+            <div class="cal-item three">
+              <button data-btn-num="3" class="btn btn-3">3</button>
+            </div>
+            <div class="cal-item plus">
+              <button data-btn-pressed="false" data-btn-num="+" class="btn btn-plus">+</button>
+            </div>
+          </div>
+          <div class="fifth-line">
+            <div class="cal-item zero">
+              <button data-btn-num="0" class="btn btn-0">0</button>
+            </div>
+            <div class="cal-item equal">
+              <button data-btn-pressed="false" class="btn btn-equal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@9.4.4/lib/browser/math.js"></script>
+  </body>
+</html>
